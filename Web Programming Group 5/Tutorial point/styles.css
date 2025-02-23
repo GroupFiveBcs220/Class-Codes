@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+:root{
+    --color:rgb(35, 121, 207);
+    --color-bg:#fff;
+
+}
+body{
+    background: var(--color);
+   
+}
+.header{
+    position: relative;
+}
+header .section-1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section-1 .navbox li{
+    display: inline-flex;
+}
+.navbox li a{
+    color: var(--color-bg);
+    margin: 10px;
+    font-size: 15px;
+}
+.navbox li a:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+}
+.navbox li a i{
+    padding: 5px;
+}
+.icon{
+    position: absolute;
+    right: 10px;
+    padding-right: 10px;
+    margin: 5px;
+}
+.icon a{
+    color: var(--color-bg);
+    margin: 3px;
+    background-color: rgb(32, 104, 177);
+    padding: 5px;
+
+}
+.icon a i{
+    font-size: 18px;
+}
+
+/*section 2*/
+.section-2{
+    display: flex;
+    width: 100%;
+    background: var(--color-bg);
+    padding: 10px 5px;
+    flex-wrap: wrap;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+#hero h1{
+    padding-right: 50px;
+    font-size: 30px;
+    color: var(--color);
+    font-style: italic;
+}
+#hero a{
+    color: var(--color);
+    padding-right: 50px;
+}
+#input input{
+    width: 500px;
+    border: 1px solid var(--color);
+    padding: 10px 5px;
+    margin-right: 10px;
+
+}
+#navlist ul{
+    display: flex;
+}
+#navlist ul li a{
+    margin: 5px;
+    color: var(--color);
+}
+.btn{
+    border: none;
+    padding: 15px 20px ;
+    color: var(--color-bg);
+    background-color: var(--color);
+}
+
+/*section-3*/
+.section-3 .navbar{
+    padding: 10px 5px;
+    background-color: rgb(9, 39, 70);
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+}
+.navbar ul li a{
+    margin: 25px;
+    color: var(--color-bg);
+
+}
+@media all and (max-width:639px){ 
+    .wrapper{ width:320px!important; padding: 0 !important; }
+    .container{ width:300px!important;  padding: 0 !important; }
+    .mobile{ width:300px!important; display:block!important; padding: 0 !important; }
+    .img{ width:100% !important; height:auto !important; }
+    *[class="mobileOff"] { width: 0px !important; display: none !important; }
+    *[class*="mobileOn"] { display: block !important; max-height:none !important; }
+  }
